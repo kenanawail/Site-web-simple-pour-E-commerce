@@ -1,0 +1,47 @@
+<?php
+ include("inc/mom.php");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="./style.css">
+    <title>login page</title>
+</head>
+<body class="bady">
+
+    <header class="lala">
+        <h2 class="logo">Kn~<span>Phone</span></h2>
+        <img src="" alt="">
+        <div class="humberger">
+            <i class="fa-solid fa-bars active"></i>
+            <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index2.php">Home</a></li>
+                <li><a href="./index2.php">Devices</a></li>
+                <li><a href="./index2.php">Contact</a></li>
+                <button class="btn"><a href="./sing up.php"><span1>sing</span1><span2>~up</span2></a></button>
+            </ul>
+        </nav>
+    </header>
+   <section>
+
+    <br>
+    <br>
+    
+    <form action="./index2.php" class="form">
+        <a href="./sing up.php"><h2><span1>Sign</span1> <span2>in</span2></h2></a>
+       
+        <input type="text" name="email" placeholder="entre your email" required>
+        <input type="text" name="password" placeholder="create your password" required>
+        
+        <button>sign in</button>
+
+       
+         
+    </form>
+</body>
+</html>

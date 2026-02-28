@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+
+body {
+  background-color: #333;
+}
+
+header {
+  position: sticky;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  color: #fff;
+}
+
+
+.logo {
+  color: red;
+  font-size: 35px;
+  cursor: pointer;    
+}
+
+
+
+
+
+.logo span {
+  color: green;
+}
+
+.humberger {
+  display: none;
+}
+
+.navbar {
+  position:sticky;
+  top: 15;
+  padding: 5px 20px;
+  z-index: 1000; 
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+}
+
+.navbar ul li {
+  margin:0 2rem;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration:none;
+}
+
+.btn {
+  border: transparent;
+  cursor: pointer;
+  border-radius: 6%;
+  font-size: 25px;
+  height: 35px;
+  text-align: center;
+  align-items: center;
+  margin-top: auto;
+  background-color: transparent;
+}
+
+.btn span1 {
+  color: red;
+}
+
+.btn span2 {
+  color: green;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+
+@media(max-width:900px) {
+  header {
+    padding: 0 2rem;
+    position: relative;
+  }
+  .humberger {
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    background-color: #333;
+    position: relative;
+  }
+
+  .humberger i{
+    position: absolute;
+    inset:0;
+    margin:auto;
+    width: max-content;
+    height: max-content;
+    opacity: 0;
+  }
+
+  .humberger i.active {
+    opacity: 1; 
+  }
+
+  .navbar {
+    position: absolute;
+    background-color: #665e5e;
+    top: 80px;
+    width: 100%;
+    left: 0;
+    padding: 0 2rem;
+    opacity: 0;
+  }
+
+  .navbar.active {
+    opacity: 1;
+  }
+  
+  .navbar ul {
+    display: block;
+  }
+
+  .navbar ul li {
+    margin: 20px 0;
+    border-bottom: 1px solid #a4a4a4;
+    padding-bottom: 10px;
+  }
+
+  .navbar ul li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar ul li a {
+    margin: 0;
+  }
+}
+
+.Home .vd {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ display:flex;
+ object-fit:cover; 
+ z-index: -1;
+}
+
+
+
+.Home {
+  height:650px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center; 
+}
+
+
+
+.Home span1 {
+  color: red;
+}
+
+.Home span2 {
+  color: green;
+}
+
+.Home h1 {
+  padding: 20px;
+  font-size: 45px;
+  margin-left: 30px;
+  text-align: center;
+  align-items: center;
+ }
+
+
+
+.Home h1 span1 {
+  color: red;
+}
+
+.Home h1 span2 {
+  color: green;
+}
+
+
+.Home p1 {
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+.Home p2 {
+  font-size: 25px;
+  display:block;
+  padding: 10px;
+}
+
+
+
+.Home h4 {
+  font-size: 30px;
+  color: red;
+  padding: 2px;
+}
+
+.Home h4:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.icons {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.icons a {
+  color: #fff;
+}
+
+.icon a i:hover{
+  cursor: pointer;
+  background-color: red;
+}
+
+.Devices .vd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.Devices {
+  background-color: black;
+  height: 850px;
+  color: #fff;
+  cursor: pointer;
+  
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 6px;
+  gap: 25px;
+}
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.airpods,
+.pc,
+.tabblette,
+.Playstation,
+.descktop,
+.tv{
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.tansi9 {
+  background-color: transparent;
+  color: transparent;
+}
+
+
+
+
+
+
+.Devices h1 {
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  margin-top: 25px;
+
+} 
+
+.Service {
+  height: 700px;
+  background-color: black;
+  color: #fff;
+}
+
+.Service h1 {
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 430px;
+  width: 430px;
+  border: 1px solid #fff;
+  align-items: center;
+  margin-left: 270px;
+  padding: 2px;
+  background-color: transparent;;
+}
+
+.bady {
+  background-image: url(./photo/image54.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+
+
+
+
+.form input {
+  display: flex;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  border-radius: 25px;
+  margin: 10px;
+ 
+}
+
+.form  a {
+  margin: auto;
+  font-size: 30px;
+  text-decoration:underline blue ;
+  background-color: transparent;
+  color: white;
+}
+
+.form a span1 {
+  color: red;
+}
+
+.form a span2 {
+  color: green;
+}
+
+.form select {
+  color: black;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 20px;
+  
+}
+
+.form button  {
+  font-size: 50px;
+  margin: auto;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  font-size: 30px;
+  background-color: #fff;
+  background-color: #fff;
+  transform: .5s;
+  font-size: 30px;
+  cursor: pointer;
+  
+}
+
+
+.btn-login:hover {
+  background-color:#fff;
+}
+
+
+.Contact {
+  font-size: 35px;
+  text-align: center;
+  align-items: center;
+  height: 120px;
+  padding: 5px;
+  background-color: black;
+}
+
+.cont input {
+  border: #fff;
+  width: 880px;
+  text-align: center;
+  align-items: center;
+  font-size: 26px;
+  text-align:justify;
+}
+
+.cont button {
+  padding: 5px;
+  font-size: 19px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  
+  
+}
+
+
+.footer {
+  height: 600px;
+  color: #333;
+  padding: 50px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: -300px;
+  background-color: black;
+}
+
+
+
+.footer-text {
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: inline-table;
+}
+
+.col-lg-6  {
+  margin: 0;
+  float: left;
+}
+
+.row {
+  color: #fff;
+  
+}
+
+.mb-3 {
+  margin: 29px 0px;
+  font-size: 10px;
+}
+
+.form-label{
+  font-size: 18px;
+}
+
+.form-control{
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.btn-primary{
+  color: black;
+  border-radius: 20px;
+}
+
+.adding{
+  background-color: black;
+  height: 600px;
+  
+}
+
+
+
+.container {
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.table {
+  color: #fff;
+}
+
+
+.returnhome {
+  color: #fff;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  margin-left: 42%;
+  border: 5Px yellowgreen solid;
+}
+
+.cheks {
+  color: #fff;
+  font-size: 20px;
+  margin: 1px 40%;
+  display: inline-block;
+  padding: 2px;
+  text-decoration: none;
+  text-align: center;
+  
+}
+

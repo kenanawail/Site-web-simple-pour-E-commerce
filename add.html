@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>صفحة المنتجات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>منتجاتنا</h1>
+
+    <div class="products">
+        <?php
+        $products = [
+            [
+                'name' => 'منتج 1',
+                'price' => '100 ريال',
+                'image' => 'https://via.placeholder.com/150'
+            ],
+            [
+                'name' => 'منتج 2',
+                'price' => '150 ريال',
+                'image' => 'https://via.placeholder.com/150'
+            ],
+            [
+                'name' => 'منتج 3',
+                'price' => '200 ريال',
+                'image' => 'https://via.placeholder.com/150'
+            ]
+        ];
+
+        foreach ($products as $product) {
+            echo '<div class="product">';
+            echo '<img src="' . $product['image'] . '" alt="' . $product['name'] . '">';
+            echo '<h2>' . $product['name'] . '</h2>';
+            echo '<p>' . $product['price'] . '</p>';
+            echo '<button>إضافة إلى السلة</button>';
+            echo '</div>';
+        }
+        ?>
+    </div>
+</body>
+</html>
